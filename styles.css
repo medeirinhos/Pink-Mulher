@@ -1,0 +1,134 @@
+/* Reset CSS */
+* {
+    box-sizing: border-box;
+    margin: 5;
+    padding: 5;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #000000;
+    background-color: #e2b3e2ad;
+  }
+  
+  header {
+    background-color: #f1169eea;
+    color: #070707ea;
+    padding: 1em;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 1;
+    padding: 3;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  nav li {
+    margin-right: 20px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+  }
+  
+  section {
+    background-color: #fffffffa;
+    padding: 1em;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1, h2 {
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    margin-bottom: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+  }
+  
+  button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #555;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    clear: both;
+  }
+  
+  /* Media Queries */
+  
+  @media (max-width: 767px) {
+    main {
+      flex-direction: column;
+    }
+    section {
+      margin-bottom: 10px;
+    }
+    form {
+      flex-direction: column;
+    }
+    input, textarea {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    header {
+      padding: 0.5em;
+    }
+    nav ul {
+      flex-direction: column;
+    }
+    nav li {
+      margin-bottom: 10px;
+    }
+    main {
+      padding: 1em;
+    }
+    section {
+      padding: 0.5em;
+    }
+    form {
+      padding: 0.5em;
+    }
+  }
